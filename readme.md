@@ -92,7 +92,7 @@ ActionScript で書くと dispatcher.dispatchEvent(event); に近いです。
       }))
     );
 
-こんな感じです。ns.observeChannel が受け取る側のメソッドです。object.addEventListener() に近いです。
+このようにして受け取ります。ns.observeChannel が受け取る側のメソッドです。object.addEventListener() に近いです。
 
 上のコードでは promise が登場しています。  
 冒頭で「promise という概念で非同期処理をシーケンシャルに記述できる」と書きました。  
