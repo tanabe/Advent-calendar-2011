@@ -23,4 +23,4 @@ Namespace と brook は GitHub 上で開発されています。
 興味を持たれた方は watch や fork をしてみてください。
 
 * [Namepsace](https://github.com/hirokidaichi/namespace-js)
-* brook(https://github.com/hirokidaichi/brook)
+* [brook](https://github.com/hirokidaichi/brook)
