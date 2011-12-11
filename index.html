@@ -1,1 +1,45 @@
-My GitHub Page
+<html>
+  <head>
+    <script type="text/javascript" src="js/lib/namespace.js"></script>
+    <script type="text/javascript" src="js/lib/brook-core.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <title>brook.js sample</title>
+    <style type="text/css">
+      .rect {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 0;
+        top: 0;
+        border: 10px solid #ccc;
+        background-color: #000;
+      }
+
+      button {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <button type="button" id="moveButton">move</button>
+    <script type="text/javascript">
+      Namespace('com.kaihatsubu.sample.main').use('com.kaihatsubu.sample *').apply(function(ns) {
+        var sample = new ns.Sample();
+        sample.initialize();
+      });
+    </script>
+  </body>
+</html>
