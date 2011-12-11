@@ -86,8 +86,7 @@ ActionScript で書くと dispatcher.dispatchEvent(event); に近いです。
         }
         next(value);
       })
-      .bind(ns.promise(fu
-nction(next, value) {
+      .bind(ns.promise(function(next, value) {
         value.hide();
       }))
     );
@@ -95,8 +94,9 @@ nction(next, value) {
 こんな感じです。ns.observeChannel が受け取る側のメソッドです。object.addEventListener() に近いです。
 
 上のコードでは promise が登場しています。冒頭で「promise という概念で非同期処理をシーケンシャルに記述できる」と書きました。
+あまりいい例ではないかもしれませんが、ここでは「四角が動き終わったあとに消える」という一連動作をシ
+ーケンシャルに記述しています。
 
-あまりいい例ではないかもしれませんが、ここでは「四角が動き終わったあとに消える」という一連動作をシーケンシャルに記述しています。
 promise では bind() を使っていくらでも処理を数珠つなぎのように記述することができます。
 
     hoge
@@ -108,3 +108,5 @@ promise では bind() を使っていくらでも処理を数珠つなぎのよ�
 ### いきなりまとめ
 
 以上が、大規模 JavaScript アプリケーション開発をサポートする Namespace と brook の紹介でした。
+brook は若干敷居が高いかもしれませんが、Namespace は明日にでも使えるライブラリだと思います。
+JavaScript 開発でネームスペースの管理をしていない方はこれを機に導入してみてはいかがでしょうか。
