@@ -15,7 +15,8 @@ Namespace は名前の通り JavaScript にネームスペースを提供する�
 
 ### brook とは
 
-promise という概念で非同期処理をシーケンシャルに記述できることが特徴の JavaScript フレームワークです。他にも様々な機能があるのですが、今回は「channel」という、オブザーバパターンを提供する機能を使って見ました。
+promise という概念で非同期処理をシーケンシャルに記述できることが特徴の JavaScript フレームワークです。
+他にも様々な機能があるのですが、今回は「channel」という、オブザーバパターンを提供する機能を使ってみました。
 
 ### 各ライブラリのリポジトリ
 
@@ -24,3 +25,21 @@ Namespace と brook は GitHub 上で開発されています。
 
 * [Namepsace](https://github.com/hirokidaichi/namespace-js)
 * [brook](https://github.com/hirokidaichi/brook)
+
+### サンプル
+
+http://tanabe.github.com/Advent-calnedar-2011/
+※最新版の Chrome などモダンなブラウザでお試しください。
+
+brook が Namespace に依存しているので、行頭でこのような宣言が行われます。
+
+    Namespace('com.kaihatsubu.sample')
+    .use('brook *')
+    .use('brook.channel *')
+    .use('brook.model *')
+    .use('brook.util *')
+
+use は、Perl の use や ActionScript の import と同じ意味を持ちます。
+今回はアスタリスクを使って、そのパッケージのすべてのモジュールを利用できるようにしていますが、
+use('some.package doSomething') として、依存しているモジュールを個別に指定することも出来ます。
+
