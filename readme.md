@@ -5,7 +5,7 @@
 
 ### はじめに
 
-11 日目担当の tanabe です。本日は Namespace と brook を簡単に紹介しようと思います。  
+[JavaScript Advent Calendar 2011 (フレームワークコース)](http://atnd.org/events/21977) 11 日目担当の tanabe です。本日は Namespace と brook を簡単に紹介しようと思います。  
 サンプルのコードを読んでいただき「へー、こんな風に書くのね」と、なんとなくわかっていただくのが目的です。  
 
 ### Namespace とは
